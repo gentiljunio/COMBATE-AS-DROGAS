@@ -121,14 +121,19 @@ main {
 }
 
 .principal {
-  margin-left: 250px;
-  flex: 1;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: calc(100% - 250px); /* <<< esta linha aqui */
+  margin-left: 0; /* zera a margem lateral */
+  max-width: 100%; /* ocupa a tela toda */
+  padding: 20px 15px; /* espaçamento confortável */
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 10px 15px; /* também melhora o espaçamento lateral */
+  width: 100%;
+  max-width: 100%; /* novo */
 }
 section {
   margin-bottom: 30px;
@@ -306,7 +311,7 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-right: 60px;
+    
   }
 
   main {
