@@ -262,12 +262,10 @@ body {
 
 @media (max-width: 768px) {
   #theme-toggle {
-
     right: 10px;
     font-size: 1em;
     padding: 5px 8px;
   }
-
 
   .sidebar {
     position: relative;
@@ -289,7 +287,9 @@ body {
 
   .principal {
     margin-left: 0;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   header h1 {
@@ -303,7 +303,6 @@ body {
   }
 
   .img {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
@@ -314,11 +313,13 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    
   }
 
   main {
+    margin-left: 0;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   iframe {
@@ -335,8 +336,10 @@ body {
   }
 
   p {
+    text-align: left; /* <-- ajuste aqui pra mobile */
     font-size: 16px;
     line-height: 1.5;
+    word-spacing: normal;
   }
 
   #btn-topo {
@@ -347,8 +350,7 @@ body {
   }
 
   .ajuda {
-    margin: 40px auto;
-    /* centraliza horizontalmente */
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,8 +362,9 @@ body {
   }
 
   footer {
-    position: relative; /* Tira o fixo em celular pra não cobrir conteúdo */
-    width: 100%; /* ocupa toda largura */
+    position: relative; /* Remove fixo para o footer no celular */
+    width: 100%;
     padding: 10px 0;
   }
 }
+
